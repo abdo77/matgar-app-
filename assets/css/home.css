@@ -1,0 +1,126 @@
+.content{
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 1;
+    flex-grow: 1;
+}
+.pages-container{
+    padding: 30px 10%;
+    margin: auto;
+    overflow: hidden;
+    width: 100%;
+    min-height: 400px;
+}
+@media all and (max-width : 1125px) {
+    .pages-container{
+        padding: 30px 2%;
+    }
+}
+.tabseet-container , .Curriculum-container,.bookshop-container{
+    position: relative;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: white;
+    overflow: hidden;
+    top: 0;
+    border-radius: 15px;
+    box-shadow: 0 0 2px 2px black;
+    margin: auto;
+    transition: all 1s;
+    background-image: url(../imgs/login.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+.tabseet-container{
+    left: -500%;
+}
+.Curriculum-container{
+    left: 500%;
+}
+.bookshop-container{
+    opacity: 0;
+}
+.tabseet-container.show{
+    left: 0;
+}
+.Curriculum-container.show{
+    left: 0;
+}
+.bookshop-container.show{
+    opacity:1;
+}
+.page-details{
+    height: 100%;
+    width: 100%;
+    display: block;
+    background-color: rgba(0, 0, 0, .5);
+    color: white !important;
+    text-decoration: none !important;
+    font-size: 15px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    transition: all .3s;
+    font-weight: bold;
+}
+.page-details h5{
+    display: block;
+    margin-bottom: 50px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid white;
+    font-weight: bold;
+}
+.page-details p{
+    margin-top: 50px;
+    margin-bottom: 0;
+}
+.page-details a {
+    display: block;
+    color: white;
+    background-color: #35A0DE;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 1px solid #35A0DE;
+    width: 100px;
+    font-weight: bold;
+    padding: 5px;
+}
+.bookshop-container:hover , .Curriculum-container:hover , .tabseet-container:hover{
+    background-size: 110% 110%;
+}
+.page-details a:hover {
+    background-color: white;
+    color: #35A0DE;
+}
+h2{
+    text-align: center;
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: 25px 0px;
+}
+h2::before {
+    content: '';
+    display: inline-block;
+    width: 30px;
+    height: 2px;
+    background-color: black;
+}
+h2::after {
+    content: '';
+    display: inline-block;
+    width: 30px;
+    height: 2px;
+    background-color: black;
+}
+h2 span {
+    margin: 0px 10px;
+    font-weight: bold;
+    color: black;
+    display: inline-block;
+    vertical-align: baseline;
+}

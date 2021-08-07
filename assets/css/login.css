@@ -1,0 +1,121 @@
+.container{
+    padding: 50px 20px;
+    height: 100%;
+    min-height: 525px;
+}
+body{
+    background-image: linear-gradient(to left , #ccd7ea, #e3e8f3);
+}
+.form-container{
+    width: 100%;
+    max-width: 960px;
+    margin: auto;
+    overflow: hidden;
+    background-color: white;
+    border-radius: 20px;
+    min-height: 525px;
+    height: 100%;
+    max-height: 625px;
+    box-shadow: 0 10px 10px #98a9c6;
+}
+.first-div{
+    display: flex;
+}
+.second-div{
+    background-image: linear-gradient(to right , #eff2fc,#fefcff);
+    align-items: center;
+}
+form{
+    margin: auto;
+    position: relative;
+    bottom: 0;
+    top: 0;
+}
+.logo{
+    width: 100%;
+    text-align: center;
+    margin: 15px 0px;
+    margin-top: 30%;
+}
+.logo img {
+    width: 40%;
+}
+.form-header {
+    font-weight: bold;
+    font-size: 15px;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0px;
+    font-family: 'font';
+    font-weight: bold;
+}
+@font-face {
+    font-family: 'font';
+    src: url(../Exo2-VariableFont_wght.ttf);
+}
+.input-group{
+    width: 100%;
+    position: relative;
+    padding: 10px 0px;
+}
+h3{
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #104daf;
+}
+.continue {
+    margin-top: 20px;
+    width: 100%;
+    top: 85%;
+    border-radius: 5px;
+    outline: none;
+    border: 0px;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #1157c8;
+    color: white;
+    padding: 5px;
+    cursor: pointer;
+}
+.input-group input:focus{
+    border-color: #1157c8;
+}
+.input-group input{
+    width: 100%;
+    transition: all .3s;
+    border-radius: 5px;
+    padding: 5px 15px;
+    outline: none;
+    border: 2px solid #c2c2c2;
+    display: block;
+}
+.input-group label {
+    display: block;
+    width: 100%;
+    font-weight: bold;
+    font-size: 14px;
+}
+.second-div:nth-child(1) {
+    display: none;
+}
+.second-div:nth-child(1) .logo{
+    margin-top: 15px;
+}
+@media (max-width: 767px){
+.second-div:nth-child(1) {
+    display: flex;
+    height: 90px;
+}
+.form-container{
+    flex-flow: column;
+}
+.first-div{
+    flex: 1 1 auto;
+}
+}
+
+@media all and ( max-width : 767px ) {
+    .second-div{
+        display: none;
+    }
+}
