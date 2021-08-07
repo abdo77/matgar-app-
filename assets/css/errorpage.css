@@ -1,0 +1,17 @@
+.error-container{
+    text-align: center;
+}
+.error-type{
+    font-size: 150px;
+    font-weight: bold;
+    letter-spacing: 25px;
+    color: #1480be;
+    margin-bottom: 0;
+    text-shadow: 10px 6px 1px black;
+}
+.error-message{
+    color: black;
+    font-weight: bold;
+    color: red;
+    margin-bottom: 120px;
+}
